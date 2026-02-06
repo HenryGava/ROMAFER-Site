@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercial Romafer - Materiais de Construção</title>
+    <meta name="description" content="Comercial Romafer - Materiais de construção de qualidade em São Paulo. Avaliação 4.9 no Google.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span style="font-family: 'Arial Black', sans-serif; font-style: italic;">Romafer</span>
+                </div>
+                <div class="badge">
+                    <i data-lucide="star" class="star-filled"></i>
+                    4.9 - 116 Avaliações no Google
+                </div>
+                <nav class="desktop-nav">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#avaliacoes">Avaliações</a>
+                    <a href="#contato">Contato</a>
+                    <button class="btn btn-primary" onclick="openWhatsApp()">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </button>
+                </nav>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button class="close-menu" onclick="toggleMobileMenu()">
+            <i data-lucide="x"></i>
+        </button>
+        <nav>
+            <a href="#inicio" onclick="toggleMobileMenu()">Início</a>
+            <a href="#sobre" onclick="toggleMobileMenu()">Sobre</a>
+            <a href="#avaliacoes" onclick="toggleMobileMenu()">Avaliações</a>
+            <a href="#contato" onclick="toggleMobileMenu()">Contato</a>
+            <button class="btn btn-primary" onclick="openWhatsApp()">
+                <i data-lucide="message-circle"></i>
+                WhatsApp
+            </button>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+        </div>
+        <div class="container">
+              <div class="section-header">
+                <h2>Nossos Produtos</h2>
+             <div class="divider"></div>
+            <div class="hero-content">
+               <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlDomKJYT8nl-2IZm66XsPVAavDxkfWL2bJomZFadTZnbdX75xgpvPwp8P54QI" alt="Ferramentas">
+                        <div class="product-overlay"></div>
+                        <div class="product-title">
+                            <i data-lucide="wrench"></i>
+                            <h3>Ferramentas</h3>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Ferramentas profissionais e de qualidade</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1767823644482-d62a6e13dedb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ferragens">
+                        <div class="product-overlay"></div>
+                        <div class="product-title">
+                            <i data-lucide="settings"></i>
+                            <h3>Ferragens</h3>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Parafusos, pregos e Ferragens </p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLnptFZzCfVBUcQHwjvJwS_D4zTyF5y3KPg&s85" alt="Materiais Elétricos">
+                        <div class="product-overlay"></div>
+                        <div class="product-title">
+                            <i data-lucide="zap"></i>
+                            <h3>Materiais Elétricos</h3>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Fios, cabos e componentes elétricos</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1682366278687-f1bba8c2a210?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cimento e Argamassa">
+                        <div class="product-overlay"></div>
+                        <div class="product-title">
+                            <i data-lucide="package"></i>
+                            <h3>Cimento e Argamassa</h3>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Materiais para construção e acabamento</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1646009445351-b8192e095f3a?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hidráulica">
+                        <div class="product-overlay"></div>
+                        <div class="product-title">
+                            <i data-lucide="droplet"></i>
+                            <h3>Hidráulica</h3>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Tubos, conexões e registros</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1678812165116-20ad080a9baf?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+" alt="Tintas e Acessórios">
+                        <div class="product-overlay"></div>
+                        <div class="product-title">
+                            <i data-lucide="paintbrush"></i>
+                            <h3>Tintas e Acessórios</h3>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <p>Tintas, pincéis e rolos</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+                <div class="hero-buttons">
+                   <div> <button class="btn btn-lg btn-primary" onclick="openWhatsApp()">
+                        <i data-lucide="message-circle"></i>
+                        Fale Conosco
+                    </button>
+                    <button class="btn btn-lg btn-outline" onclick="scrollToContact()">
+                        <i data-lucide="map-pin"></i>
+                        Ver Localização
+                    </button>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+                </div>
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i data-lucide="store"></i>
+                    <h3>Grande Variedade</h3>
+                    <p>Mais de 10.000 itens em estoque para sua obra</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="truck"></i>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregas em toda São Paulo com frete gratis para a região do Parque da Mooca e Bairros vizinhos. </p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="dollar-sign"></i>
+                    <h3>Preços Justos</h3>
+                    <p>Melhores preços do mercado com qualidade garantida</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="users"></i>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Equipe experiente pronta para ajudar você</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a Comercial Romafer</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Nossa Missão</h3>
+                    <p>Encantar clientes, oferecendo a melhor experiencia .</p>
+                </div>
+                <div class="about-card">
+                    <h3>Nossa Visão</h3>
+                    <p>Ser referência em soluções e variedade de materiais</p>
+                </div>
+                <div class="about-card" style="margin: 0 auto;">
+                    <h3>Nossos Valores</h3>
+                    <p>Respeito, Responsabilidade e Simplicidade</p>
+                </div>
+            </div>
+
+            <div class="hours-card">
+                <i data-lucide="clock"></i>
+                <div>
+                    <p class="hours-main">Segunda a Sexta: 08:00 - 18:00</p>
+                    <p class="hours-secondary">Sábado: 08:00 - 13:00</p>
+                    <p class="hours-secondary">Domingo: Fechado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section id="avaliacoes" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Que Dizem Nossos Clientes</h2>
+                <div class="divider"></div>
+                <div class="rating-display">
+                    <i data-lucide="star" class="star-filled"></i>
+                    <span class="rating-number">4.9</span>
+                    <span class="rating-count">(116 avaliações)</span>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Bons preços, grande variedade de materiais e pontuais nas entregas, recomendo!"</p>
+                    <div class="review-footer">
+                        <span class="review-author">Victor Colombini</span>
+                        <span class="review-date">15/10/2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Preço justo, boa localização, atendentes atenciosos."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Ricardotim Fonseca</span>
+                        <span class="review-date">28/09/2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Fácil acesso e é possível estacionar na porta da loja ou próximo a ela."</p>
+                    <div class="review-footer">
+                        <span class="review-author">Fabiano Santos</span>
+                        <span class="review-date">10/09/2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Excelente atendimento e produtos de qualidade. Sempre compro aqui!"</p>
+                    <div class="review-footer">
+                        <span class="review-author">Maria Silva</span>
+                        <span class="review-date">22/08/2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Melhor loja de materiais de construção da região. Recomendo!"</p>
+                    <div class="review-footer">
+                        <span class="review-author">João Pedro</span>
+                        <span class="review-date">05/08/2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Preços competitivos e entrega rápida. Muito satisfeita!"</p>
+                    <div class="review-footer">
+                        <span class="review-author">Ana Costa</span>
+                        <span class="review-date">18/07/2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-card">
+                    <h3>Envie sua Mensagem</h3>
+                    <p class="form-description">Preencha o formulário e entraremos em contato</p>
+                    <form id="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Seu Telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <p class="info-label">Endereço</p>
+                                <p class="info-text">R. Dom Joaquim de Melo, 282 - Parque da Mooca, São Paulo - SP, 03122-050</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <p class="info-label">Telefone</p>
+                                <p class="info-text">(11) 94701-8657</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <p class="info-label">E-mail</p>
+                                <p class="info-text">contato@romafer.com.br</p>
+                            </div>
+                        </div>
+                          <div class="info-item">
+                            <i data-lucide="instagram"></i>
+                            <div>
+                                <p class="info-label">Instagram</p>
+                                <p class="info-text">@comercialromafer</pw21'9p0>
+                            </div>
+                        </div>
+                        <button class="btn btn-whatsapp btn-full" onclick="openWhatsApp()">
+                            <i data-lucide="message-circle"></i>
+                            Chamar no WhatsApp
+                        </button>
+                    </div>
+
+                    <div class="map-card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4865741869474!2d-46.57823892472028!3d-23.552709978786623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec2e5d7b0f7%3A0x8b1f0c3c3c3c3c3c!2sR.%20Dom%20Joaquim%20de%20Melo%2C%20282%20-%20Parque%20da%20Mooca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003122-050!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização Comercial Romafer">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i data-lucide="store"></i>
+                    <span>Comercial Romafer</span>
+                </div>
+                <p class="footer-text">© 2026 Comercial Romafer. Todos os direitos reservados.</p>
+                <p class="footer-text">by Henry Gava / henry.gavas@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
